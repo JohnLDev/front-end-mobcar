@@ -50,6 +50,7 @@ export const CarContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
 
   .content {
     width: 100%;
@@ -146,7 +147,7 @@ export const CarContainer = styled.div`
 
 export const ModalOptions = styled.ul`
   right: 45px;
-  position: fixed;
+  position: absolute;
   z-index: 18;
   background: #ffffff;
   list-style: none;
@@ -156,14 +157,13 @@ export const ModalOptions = styled.ul`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative to bottom;
   width: 77px;
-  height: 100px;
+  height: 128px;
   @media (min-width: 700px) {
     right: 30px;
-    position: relative to bottom;
-    width: 77px;
 
-    height: 128px;
+
   }
 
   li {
