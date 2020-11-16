@@ -159,10 +159,10 @@ export const ModalOptions = styled.ul`
   justify-content: center;
   position: relative to bottom;
   width: 77px;
-  height: 128px;
+  height: 100px;
   @media (min-width: 700px) {
     right: 30px;
-
+    height: 128px;
 
   }
 
