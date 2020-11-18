@@ -89,7 +89,7 @@ const Header: React.FC = () => {
         toast.error('invalid date format(dd/mm/yyyy)')
         return
       }
-      data.birthdate = m+'/'+d+'/'+y
+      data.birthdate = d+'/'+m+'/'+y
       try {
         await schema.validate(data)
         await api.post('user/signup', data)
