@@ -175,7 +175,7 @@ const Header: React.FC = () => {
                     maxLength={11}
                     value={cellphone}
                     onChange={({ target: { value } }) => {
-                      setCellphone(PhoneMask(value))
+                      setCellphone(value)
                     }}
                   />
                   <Input
